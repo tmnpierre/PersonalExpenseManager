@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "11UMO93oar4M68n5H1ilXJ+qV/Z+9o936kkAmnJOFoYZDQuT7noK9wDqOVgFNEeOfFxDFIooVfzlweRhDsI/Bg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tomyn\\Documents\\C#\\PersonalProject\\PersonalExpenseManager\\PersonalExpenseManager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tomyn\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
