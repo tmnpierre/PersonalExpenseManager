@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-public class ExpenseManager
+﻿public class ExpenseManager
 {
     private List<Expense> expenses;
 
@@ -28,5 +25,15 @@ public class ExpenseManager
         {
             Console.WriteLine(e);
         }
+    }
+
+    public double CalculateTotalExpenses()
+    {
+        double total = 0;
+        foreach (Expense e in expenses)
+        {
+            total += e.Amount;
+        }
+        return total;
     }
 }
