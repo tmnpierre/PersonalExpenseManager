@@ -37,11 +37,25 @@ class Program
                     break;
             }
         }
+
+        expenseManager.SaveExpenses();
     }
 
     private static void AddExpense(ExpenseManager expenseManager)
     {
+        Console.Write("Enter the amount: ");
+        double amount = Convert.ToDouble(Console.ReadLine());
 
+        Console.Write("Enter the date (format YYYY-MM-DD): ");
+        DateTime date = Convert.ToDateTime(Console.ReadLine());
+
+        Console.Write("Enter the category: ");
+        string category = Console.ReadLine();
+
+        Expense newExpense = new Expense(amount, date, category);
+        expenseManager.AddExpense(newExpense);
+
+        Console.WriteLine("Expense added successfully.");
     }
 
     private static void CalculateAndDisplayTotal(ExpenseManager expenseManager)
