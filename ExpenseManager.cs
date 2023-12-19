@@ -17,6 +17,13 @@ public class ExpenseManager
 
     public void DisplayExpenses()
     {
+        if (expenses.Count == 0)
+        {
+            Console.WriteLine("No expenses recorded yet.");
+            return;
+        }
+
+        Console.WriteLine("\nList of Expenses:");
         foreach (Expense e in expenses)
         {
             Console.WriteLine(e);
